@@ -7,8 +7,8 @@
   background-position-y: -255px;
 }
 
-body{
-    background-color:#353535;
+body {
+  background-color: #353535;
 }
 
 .navBrandText {
@@ -17,8 +17,8 @@ body{
   font-size: 30px;
 }
 
-.nav-link:hover{
-text-decoration: underline;
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .socialIcons {
@@ -44,13 +44,13 @@ text-decoration: underline;
   font-size: 45px;
 }
 
-.bi-twitter{
-    color: #0883b4;
+.bi-twitter {
+  color: #0883b4;
 }
 
-.bi-twitter:hover{
-    color: #00acee;
-    font-size: 45px;
+.bi-twitter:hover {
+  color: #00acee;
+  font-size: 45px;
 }
 
 .bi-telephone {
@@ -62,6 +62,10 @@ text-decoration: underline;
   font-size: 45px;
 }
 
-#hrsModalPhone{
-    text-decoration: none;
+#hrsModalPhone {
+  text-decoration: none;
+}
+
+#map {
+  height: 180px;
 }
