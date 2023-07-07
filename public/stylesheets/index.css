@@ -69,3 +69,7 @@ body {
 #map {
   height: 180px;
 }
+
+.cardTitleText{
+    font-family: "Bangers", cursive;
+}
