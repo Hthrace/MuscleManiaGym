@@ -20,6 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="/public/stylesheets/index.css" />
   </head>
   <body class="d-flex flex-column vh-100">
@@ -84,8 +90,8 @@
                 <li>Wednesday: 6:00am - 10:00pm</li>
                 <li>Thursday: 6:00am - 10:00pm</li>
                 <li>Friday: 6:00am - 9:00pm</li>
-                <li>Saturday: 8:00am - 8:00pm</li>
-                <li>Sunday: 8:00am - 8:00pm</li>
+                <li>Saturday: 5:00am - 8:00pm</li>
+                <li>Sunday: 5:00am - 8:00pm</li>
               </ul>
               <div class="text-center pb-3">
                 <p class="card-text text-center">
@@ -155,12 +161,12 @@
             <div class="card-body">
               <h5 class="card-title text-center">Location</h5>
               <hr />
-              <div class="text-center">
+              <div id="map" class="rounded"></div>
+              <div class="text-center mt-4">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Praesentium, nemo debitis molestias consequuntur quas suscipit
-                  eligendi animi laboriosam explicabo dolorem magnam eius quod
-                  repellat nulla maiores, officiis ex. Aliquam, veritatis!
+                  409 Blackwell St,
+                  <br>
+                  Durham, NC 27701
                 </p>
                 <hr />
                 <a class="btn btn-primary" href="#" role="button">Info</a>
@@ -375,5 +381,9 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="/public/js/index.js"></script>
   </body>
 </html>
