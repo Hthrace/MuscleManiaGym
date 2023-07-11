@@ -1,10 +1,10 @@
 .bannerBackground {
-  background-image: url(https://images.unsplash.com/photo-1637666062717-1c6bcfa4a4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80),
-    url(https://images.unsplash.com/photo-1579364046732-c21c2177730d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  background-image: url("/public/imgs/banner/bannerRight.jpg"),
+    url("/public/imgs/banner/bannerLeft.jpg");
+  background-size: 1170px, 1170px;
+  background-position: right, left;
+  background-repeat: no-repeat, no-repeat;
   height: 30%;
-  background-position-y: -255px;
 }
 
 body {
