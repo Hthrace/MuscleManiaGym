@@ -1,0 +1,68 @@
+.bannerBackground {
+    background-image: url("/public/imgs/banner/bannerRight.jpg"),
+      url("/public/imgs/banner/bannerLeft.jpg");
+    background-size: 1170px, 1170px;
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+    height: 30%;
+  }
+  
+  body {
+    background-color: #353535;
+  }
+  
+  .navBrandText {
+    color: whitesmoke;
+    font-family: "Bangers", cursive;
+    font-size: 30px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .socialIcons {
+    font-size: 35px;
+    margin-left: 35px;
+  }
+  
+  .bi-instagram {
+    color: rgb(206, 10, 206);
+  }
+  
+  .bi-instagram:hover {
+    color: rgb(245, 13, 245);
+    font-size: 45px;
+  }
+  
+  .bi-youtube {
+    color: rgb(194, 14, 14);
+  }
+  
+  .bi-youtube:hover {
+    color: red;
+    font-size: 45px;
+  }
+  
+  .bi-twitter {
+    color: #0883b4;
+  }
+  
+  .bi-twitter:hover {
+    color: #00acee;
+    font-size: 45px;
+  }
+  
+  .bi-telephone {
+    color: whitesmoke;
+  }
+  
+  .bi-telephone:hover {
+    color: whitesmoke;
+    font-size: 45px;
+  }
+  
+  .cardTitleText {
+    font-family: "Bangers", cursive;
+  }
+  
