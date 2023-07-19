@@ -1,6 +1,6 @@
 .bannerBackground {
-  background-image: url("/public/imgs/banner/bannerRight.jpg"),
-    url("/public/imgs/banner/bannerLeft.jpg");
+  background-image: url("/MuscleManiaGym/public/imgs/banner/bannerRight.jpg"),
+    url("/MuscleManiaGym/public/imgs/banner/bannerLeft.jpg");
   background-size: 1170px, 1170px;
   background-position: right, left;
   background-repeat: no-repeat, no-repeat;
@@ -26,17 +26,17 @@ body {
 }
 
 #dPass {
-  background-image: url("/public/imgs/membership/dayPass.jpg");
+  background-image: url("/MuscleManiaGym/public/imgs/membership/dayPass.jpg");
   background-size: 687px;
 }
 
 #sMembership {
-  background-image: url("/public/imgs/membership/standardMembership.jpg");
+  background-image: url("/MuscleManiaGym/public/imgs/membership/standardMembership.jpg");
   background-size: 687px;
 }
 
 #pMembership {
-  background-image: url("/public/imgs/membership/premiumMembership.jpg");
+  background-image: url("/MuscleManiaGym/public/imgs/membership/premiumMembership.jpg");
   background-size: 687px;
 }
 
