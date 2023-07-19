@@ -21,47 +21,6 @@ body {
   text-decoration: underline;
 }
 
-.socialIcons {
-  font-size: 35px;
-  margin-left: 35px;
-}
-
-.bi-instagram {
-  color: rgb(206, 10, 206);
-}
-
-.bi-instagram:hover {
-  color: rgb(245, 13, 245);
-  font-size: 45px;
-}
-
-.bi-youtube {
-  color: rgb(194, 14, 14);
-}
-
-.bi-youtube:hover {
-  color: red;
-  font-size: 45px;
-}
-
-.bi-twitter {
-  color: #0883b4;
-}
-
-.bi-twitter:hover {
-  color: #00acee;
-  font-size: 45px;
-}
-
-.bi-telephone {
-  color: whitesmoke;
-}
-
-.bi-telephone:hover {
-  color: whitesmoke;
-  font-size: 45px;
-}
-
 .cardTitleText {
   font-family: "Bangers", cursive;
 }
@@ -81,6 +40,6 @@ body {
   background-size: 687px;
 }
 
-.bannerLogo{
+.bannerLogo {
   height: 200px;
 }
