@@ -65,3 +65,7 @@ body {
 .cardTitleText {
   font-family: "Bangers", cursive;
 }
+
+.bannerLogo{
+  height: 200px;
+}

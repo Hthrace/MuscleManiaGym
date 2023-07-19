@@ -80,3 +80,7 @@ body {
   background-image: url("/public/imgs/membership/premiumMembership.jpg");
   background-size: 687px;
 }
+
+.bannerLogo{
+  height: 200px;
+}
