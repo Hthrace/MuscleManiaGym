@@ -7,12 +7,10 @@ Muscle Mania Gym is a responsive website created as a portfolio app to showcase 
 - [Introduction](#introduction)
 - [Technologies](#technologies)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -53,11 +51,3 @@ This project is a personal portfolio app, and I currently do not accept contribu
 ## License
 
 The content of this project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions or would like to discuss potential job opportunities, you can reach me via email at your.email@example.com.
-
----
-
-
