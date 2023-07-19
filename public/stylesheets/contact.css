@@ -1,0 +1,31 @@
+.bannerBackground {
+    background-image: url("/public/imgs/banner/bannerRight.jpg"),
+      url("/public/imgs/banner/bannerLeft.jpg");
+    background-size: 1170px, 1170px;
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+    height: 30%;
+  }
+  
+  body {
+    background-color: #353535;
+  }
+  
+  .navBrandText {
+    color: whitesmoke;
+    font-family: "Bangers", cursive;
+    font-size: 30px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .bannerLogo {
+    height: 200px;
+  }
+  
+  .cardTitleText {
+    font-family: "Bangers", cursive;
+  }
+  
