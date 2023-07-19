@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muscle Mania Gym</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/public/stylesheets/index.css" />
+  </head>
+  <body class="d-flex flex-column vh-100">
+    <div class="bannerBackground">
+      <div>
+        <img src="/public/imgs/banner/logo.png" alt="" class="bannerLogo" />
+      </div>
+    </div>
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark rounded-bottom"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand navBrandText" href="/index.html"
+          >Muscle Mania Gym</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/views/membership.html">Membership</a>
+            <a class="nav-link" href="/views/trainers.html">Trainers</a>
+            <a class="nav-link" href="/views/classes.html">Classes</a>
+            <a class="nav-link" href="/views/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container mt-3 shadow-lg rounded px-3 py-3">
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center cardTitleText">Hours</h5>
+              <hr />
+              <ul>
+                <li>Monday: 6:00am - 10:00pm</li>
+                <li>Tuesday: 6:00am - 10:00pm</li>
+                <li>Wednesday: 6:00am - 10:00pm</li>
+                <li>Thursday: 6:00am - 10:00pm</li>
+                <li>Friday: 6:00am - 9:00pm</li>
+                <li>Saturday: 5:00am - 8:00pm</li>
+                <li>Sunday: 5:00am - 8:00pm</li>
+              </ul>
+              <div class="text-center pb-4">
+                <p class="card-text text-center">
+                  These hours are subject to change, so please check with the
+                  gym for any updates or modifications.
+                </p>
+                <hr />
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#hrsModal"
+                >
+                  Holiday Hours
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center cardTitleText">
+                Follow Us On Social Media
+              </h5>
+              <hr />
+              <div>
+                <iframe
+                  width="100%"
+                  height="200px"
+                  src="https://www.youtube.com/embed/-DChdwHKSbQ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  class="mt-3"
+                ></iframe>
+              </div>
+              <hr />
+              <div class="row pb-4 mt-3">
+                <div class="col">
+                  <a href="https://www.instagram.com"
+                    ><i class="bi bi-instagram socialIcons"></i
+                  ></a>
+                </div>
+                <div class="col">
+                  <a href="https://www.youtube.com"
+                    ><i class="bi bi-youtube socialIcons"></i
+                  ></a>
+                </div>
+                <div class="col">
+                  <a href="https://twitter.com"
+                    ><i class="bi bi-twitter socialIcons"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body pb-4">
+              <h5 class="card-title text-center cardTitleText">Location</h5>
+              <hr />
+              <div id="map" class="rounded"></div>
+              <div class="text-center mt-4">
+                <p>
+                  409 Blackwell St,
+                  <br />
+                  Durham, NC 27701
+                </p>
+                <hr />
+                <a
+                  class="btn btn-primary"
+                  href="https://www.google.com/maps/place/409+Blackwell+St,+Durham,+NC+27701/@35.9915933,-78.9065919,895m/data=!3m1!1e3!4m6!3m5!1s0x89ace46c84b85463:0xdd0374809fef893e!8m2!3d35.991589!4d-78.904017!16s%2Fg%2F11c5qd_tvt!5m1!1e4?entry=ttu"
+                  role="button"
+                  >Get Directions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="hrsModal"
+        tabindex="-1"
+        aria-labelledby="hrsModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 cardTitleText" id="hrsModalLabel">
+                Closed For
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>New Year's Day</li>
+                <li>Easter Sunday</li>
+                <li>Memorial Day</li>
+                <li>Independence Day</li>
+                <li>Labor Day</li>
+                <li>Thanksgiving Day</li>
+                <li>Christmas Day</li>
+              </ul>
+              <p>You can always call to confirm our status.</p>
+              <a href="" id="hrsModalPhone"
+                ><i class="bi bi-telephone-fill"> 1-800-867-5309</i></a
+              >
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-4">
+                <img
+                  src="/public/imgs/home/personalTrainer.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Personal trainer coaching."
+                />
+              </div>
+              <div class="col-lg-8">
+                <div class="card-body">
+                  <h5 class="card-title cardTitleText">Personal Trainers</h5>
+                  <p class="card-text">
+                    Unlock your full potential at our gym! Our experienced
+                    trainers are committed to helping you achieve remarkable
+                    results. Whether you're a beginner or a fitness enthusiast,
+                    our dedicated team will guide you every step of the way.
+                    With personalized workout plans and unwavering support, our
+                    trainers will push you beyond your limits. Join us today and
+                    experience the transformative power of our exceptional
+                    trainers. Start your fitness journey now!
+                  </p>
+                  <a class="btn btn-primary" href="/views/trainers.html" role="button"
+                    >Meet Our Certified Trainers</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/public/imgs/home/equipment.jpg"
+              class="card-img-top"
+              alt="Gym equipment."
+            />
+            <div class="card-body">
+              <h5 class="card-title cardTitleText">Equipment</h5>
+              <p class="card-text">
+                Experience the ultimate workout environment with our top-quality
+                gym equipment. We pride ourselves on maintaining a clean and
+                hygienic facility, ensuring a safe and enjoyable fitness
+                experience. Our state-of-the-art equipment is regularly updated,
+                providing you with the latest fitness innovations. Join us today
+                to maximize your performance and achieve remarkable results.
+                Unleash your full potential with our exceptional gym equipment.
+              </p>
+            </div>
+            <div class="card-footer">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  "The equipment at Muscle Mania is top-notch! It's like having
+                  a personal training session with every workout. Love it!"
+                </p>
+                <footer class="blockquote-footer">
+                  John Anderson
+                  <cite title="Source Title"
+                    ><a href="https://www.nytimes.com"
+                      >The New York Times</a
+                    ></cite
+                  >
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/public/imgs/home/community.jpg"
+              class="card-img-top"
+              alt="Gym buddies"
+            />
+            <div class="card-body">
+              <h5 class="card-title cardTitleText">
+                Active Supportive Community
+              </h5>
+              <p class="card-text">
+                Join our gym and experience the power of our strong and
+                supportive community! Our gym is filled with like-minded
+                individuals who are passionate about health, wellness, and
+                helping each other succeed. From beginners to seasoned athletes,
+                everyone is welcomed and embraced in our inclusive environment.
+                <br />
+                With group workouts, friendly competitions, and social events,
+                our community provides a sense of belonging and camaraderie.
+                Join us today and be a part of a community that uplifts,
+                motivates, and celebrates every achievement. Start your fitness
+                journey with a supportive network that believes in your success!
+              </p>
+            </div>
+            <div class="card-footer">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  "The gym community at Muscle Mania is incredible! I've never
+                  felt more supported and motivated. Highly recommend!"
+                </p>
+                <footer class="blockquote-footer">
+                  Sarah Smith
+                  <cite title="Source Title"
+                    ><a href="https://www.yelp.com">Yelp</a></cite
+                  >
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/public/imgs/home/lockerroomSauna.jpg"
+              class="card-img-top"
+              alt="Sauna"
+            />
+            <div class="card-body">
+              <h5 class="card-title cardTitleText">
+                More Than Just A Locker Room
+              </h5>
+              <p class="card-text">
+                Discover the exceptional cleanliness and modernity of our gym
+                locker rooms and sauna. Our facilities are meticulously
+                maintained, providing a pristine and hygienic environment for
+                your comfort and relaxation. Experience the utmost cleanliness
+                and contemporary design as you unwind and rejuvenate in our
+                state-of-the-art sauna and locker rooms. Join us today and
+                indulge in the luxurious and refreshing amenities our gym has to
+                offer.
+              </p>
+            </div>
+            <div class="card-footer">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  "The locker rooms and sauna at Muscle Mania are simply
+                  amazing! Truly luxurious experience. A must-try!"
+                </p>
+                <footer class="blockquote-footer">
+                  Emily Roberts
+                  <cite title="Source Title"
+                    ><a href="https://www.google.com">Google Reviews</a></cite
+                  >
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer bg-dark py-3 mt-3 rounded-top">
+      <section class="container text-center">
+        <span class="text-light">&copy 2023</span>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="/public/js/index.js"></script>
+  </body>
+</html>
