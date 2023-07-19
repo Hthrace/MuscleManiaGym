@@ -2,5 +2,5 @@ const contactForm = document.querySelector("#contactForm");
 
 contactForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  return (window.location.href = "/views/index.html");
+  return (window.location.href = "/index.html");
 });
