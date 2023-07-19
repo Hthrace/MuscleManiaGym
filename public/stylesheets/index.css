@@ -53,15 +53,6 @@ body {
   font-size: 45px;
 }
 
-.bi-telephone {
-  color: whitesmoke;
-}
-
-.bi-telephone:hover {
-  color: whitesmoke;
-  font-size: 45px;
-}
-
 #hrsModalPhone {
   text-decoration: none;
 }
