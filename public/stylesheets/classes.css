@@ -21,6 +21,10 @@ body {
   text-decoration: underline;
 }
 
-.bannerLogo{
-    height: 200px;
-  }
+.bannerLogo {
+  height: 200px;
+}
+
+.cardTitleText {
+  font-family: "Bangers", cursive;
+}
