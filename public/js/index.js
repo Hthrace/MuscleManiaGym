@@ -5,5 +5,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var marker = L.marker([35.9919518102072, -78.90408856734395]).addTo(map);
+var marker = L.marker([35.9919518102072, -78.90408856734395]).addTo(map).bindPopup('<a href="https://goo.gl/maps/aXKeJ1MoECxqHPuU7">Muscle Mania</a>');
 
