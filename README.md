@@ -27,6 +27,7 @@ The project is built using the following technologies:
 - HTML
 - CSS
 - JavaScript
+- Leaflet.js
 - Bootstrap version 3
 
 ## Features
