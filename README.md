@@ -41,7 +41,7 @@ The project is built using the following technologies:
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/Hthrace/muscleManiaGym.git`
-2. Navigate to the project directory: `cd MuscleManiaGym`
+2. Navigate to the project directory: `cd muscleManiaGym`
 
 ## Usage
 
