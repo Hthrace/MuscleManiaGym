@@ -1,6 +1,6 @@
 # Muscle Mania Gym - Portfolio App
 
-### [Live Demo](https://hthrace.github.io/MuscleManiaGym)
+### [Live Demo](https://hthrace.github.io/muscleManiaGym)
 
 Muscle Mania Gym is a responsive website created as a portfolio app to showcase my skills in JavaScript, HTML, CSS, and Bootstrap version 3. This project aims to demonstrate my proficiency in web development and highlight my UI design capabilities.
 

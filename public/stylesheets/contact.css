@@ -1,6 +1,6 @@
 .bannerBackground {
-    background-image: url("/MuscleManiaGym/public/imgs/banner/bannerRight.jpg"),
-      url("/MuscleManiaGym/public/imgs/banner/bannerLeft.jpg");
+    background-image: url("/muscleManiaGym/public/imgs/banner/bannerRight.jpg"),
+      url("/muscleManiaGym/public/imgs/banner/bannerLeft.jpg");
     background-size: 1170px, 1170px;
     background-position: right, left;
     background-repeat: no-repeat, no-repeat;
